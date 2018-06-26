@@ -1,0 +1,20 @@
+{
+  "private": true,
+  "version": "0.0.0",
+  "name": "example-jquery",
+  "jest":{
+    "setupFiles":["./setup-jest.js"]
+},
+  "devDependencies": {
+    "babel-preset-env": "*",
+    "jest": "*",
+    "json-server": "^0.12.1"
+  },
+  "dependencies": {
+    "jquery": "*"
+  },
+  "scripts": {
+    "test": "jest",
+    "server": "node server/json-server.js"
+  }
+}
