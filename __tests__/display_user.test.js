@@ -4,33 +4,22 @@
 
 'use strict';
 
-// jest.mock('../fetchCurrentUser.js');
 global.fetchCurrentUser = jest.fn()
-it('displays a user after a click', () => {
+it('displays a user full name after a click', () => {
   // Set up our document body
-  document.body.innerHTML =
-    '<div>' +
-    '  <span id="username" />' +
-    '  <button id="button" />' +
-    '</div>';
+  //TODO add implementation here
 
   // This module has a side-effect
   require('../displayUser');
 
   // Tell the fetchCurrentUser mock function to automatically invoke
   // its callback with some data
-  global.fetchCurrentUser.mockImplementation(cb => {
-    cb({
-      fullName: 'Johnny Cash',
-      loggedIn: true,
-    });
-  });
+  //TODO add implementation here
 
   // Use jquery to emulate a click on our button
-  $('#button').click();
+  //TODO add implementation here
 
   // Assert that the fetchCurrentUser function was called, and that the
   // #username span's inner text was updated as we'd expect it to.
-  expect(global.fetchCurrentUser).toBeCalled();
-  expect($('#username').text()).toEqual('Johnny Cash - Logged In');
+  //TODO add implementation here
 });
