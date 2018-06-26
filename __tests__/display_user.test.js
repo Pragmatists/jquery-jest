@@ -1,9 +1,10 @@
-// Copyright 2004-present Facebook. All Rights Reserved.
+
 
 /* global document */
 
 'use strict';
-
+const $ = require('jquery')
+global.$ = $
 global.fetchCurrentUser = jest.fn()
 it('displays a user full name after a click', () => {
   // Set up our document body
