@@ -1,5 +1,4 @@
 
-
 const fetch = require('../fetchCurrentUser');
 
 it('calls into $.ajax with the correct params', () => {
@@ -11,7 +10,6 @@ it('calls into $.ajax with the correct params', () => {
   global.fetchCurrentUser(dummyCallback);
 
   // Now make sure that $.ajax was properly called during the previous
-  // 2 lines
   expect($.ajax).toBeCalledWith({
     success: expect.any(Function),
     type: 'GET',

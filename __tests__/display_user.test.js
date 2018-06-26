@@ -1,10 +1,6 @@
-// Copyright 2004-present Facebook. All Rights Reserved.
-
 /* global document */
-
-'use strict';
-
-// jest.mock('../fetchCurrentUser.js');
+const $ = require('jquery');
+global.$ = global.jQuery = $
 global.fetchCurrentUser = jest.fn()
 it('displays a user after a click', () => {
   // Set up our document body

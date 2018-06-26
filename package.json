@@ -4,7 +4,7 @@
   "name": "example-jquery",
   "jest":{
     "setupFiles":["./setup-jest.js"]
-},
+  },
   "devDependencies": {
     "babel-preset-env": "*",
     "jest": "*",
